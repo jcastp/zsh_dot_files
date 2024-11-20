@@ -77,6 +77,7 @@ ENABLE_CORRECTION="true"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(z
 	colorize
+	zsh-autosuggestions
         )
 
 source $ZSH/oh-my-zsh.sh
