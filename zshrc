@@ -114,16 +114,8 @@ source $ZSH/oh-my-zsh.sh
 alias e='export WORKING=HOME && cd ~/.emacs.d/ && git pull && emacsclient -c -n -a "" -s personal'
 alias ew='export WORKING=HOME && ~/Nextcloud/config/emacs.sh'
 alias ad='export WORKING=WORK && emacs&'
-#alias dd='export WORKING=HOME && emacs --with-profile doom&'
-# alias dd='export WORKING=HOME && cd ~/.doom.d && git pull && ~/.emacs.doom/bin/doom sync && ~/.emacs.doom/bin/doom emacs &'
 alias dd='export WORKING=HOME && bash ~/Nextcloud/tech/emacs/doom_emacs/launch_doom_emacs.sh'
 alias ddad='export WORKING=WORK && cd ~/.doom.d && git pull && ~/.emacs.doom/bin/doom env && ~/.emacs.doom/bin/doom emacs &'
-#alias ddad='export WORKING=WORK && ~/.emacs.doom/bin/doom env && emacs --debug-init --with-profile doom ~/Nextcloud/agenda/trabajo/adidas.org &'
-
-#alias adidas='emacs -q -l ~/Nextcloud/config/emacs-org-init-trabajo.el ~/Nextcloud/trabajo/adidas/adidas.org &'
- 
-## alias para agenda del trabajo
-# alias adidas='emacs -q --load ~/Nextcloud/config/emacs-org-init-trabajo.el ~/Nextcloud/trabajo/adidas/adidas.org &'
 
 ## control de conflictos de nextcloud
 alias conflict='find ~/Nextcloud/ -type f -iname "*_conflict-*" -o -iname "*conflicted*"'
