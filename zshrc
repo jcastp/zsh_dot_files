@@ -150,7 +150,7 @@ alias waves='play -n synth brownnoise synth pinknoise mix synth sine amod 0.3 10
 alias cifrado='gocryptfs -config ~/gocryptfs_backup/gocryptfs.conf ~/Nextcloud/cifrado ~/nextcloud_claro'
 
 # ollama serve
-alias llm=' ~/github/ollama/ollama serve'
+alias llm='~/github/llama-swap/llama-swap -config ~/github/llama-swap/config.yaml'
 
 export PATH="$PATH"
 
@@ -170,3 +170,10 @@ fi
 
 # Created by `pipx` on 2024-06-05 14:29:57
 export PATH="$PATH:/home/jcastp/.local/bin"
+
+# pi coding agent
+export PI_CODING_AGENT_DIR="$HOME/Nextcloud/config/pi_config"
+alias pi='export PI_CODING_AGENT_DIR="$HOME/Nextcloud/config/pi_config" && ~/github/pi-mono/pi/pi'
+
+# NPM global bin (added by Qwen Code installer)
+export PATH="$HOME/.npm-global/bin:$PATH"
