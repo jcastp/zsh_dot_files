@@ -168,7 +168,3 @@ export PATH="$PATH:/home/jcastp/.local/bin"
 export PI_CODING_AGENT_DIR="$HOME/Nextcloud/config/pi_config"
 alias pi='export PI_CODING_AGENT_DIR="$HOME/Nextcloud/config/pi_config" && ~/github/pi-mono/pi/pi'
 
-# NPM global bin (added by Qwen Code installer)
-export PATH="$HOME/.npm-global/bin:$PATH"
-
-. "$HOME/.local/share/../bin/env"
