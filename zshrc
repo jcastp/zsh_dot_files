@@ -113,6 +113,7 @@ source $ZSH/oh-my-zsh.sh
 ## alias for home emacs
 alias e='export WORKING=HOME && cd ~/.emacs.d/ && git pull && emacsclient -c -n -a "" -s personal'
 alias ew='export WORKING=HOME && ~/Nextcloud/config/emacs.sh'
+alias escribir='~/Nextcloud/config/escribir.sh'
 alias ad='export WORKING=WORK && emacs&'
 alias dd='export WORKING=HOME && bash ~/Nextcloud/tech/emacs/doom_emacs/launch_doom_emacs.sh'
 alias ddad='export WORKING=WORK && cd ~/.doom.d && git pull && ~/.emacs.doom/bin/doom env && ~/.emacs.doom/bin/doom emacs &'
@@ -169,3 +170,5 @@ alias pi='export PI_CODING_AGENT_DIR="$HOME/Nextcloud/config/pi_config" && ~/git
 
 # NPM global bin (added by Qwen Code installer)
 export PATH="$HOME/.npm-global/bin:$PATH"
+
+. "$HOME/.local/share/../bin/env"
